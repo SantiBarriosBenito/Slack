@@ -1,0 +1,129 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    &__containerlogo{
+        display: flex;
+        width: calc(100% - 20px);
+        align-content: space-between;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 80px 10px 40px 10px;
+    }
+    &__logo{
+        width: 70px;
+    }
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+    }
+    &__ul{     
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: calc(100% - 20px);
+        padding: 20px;
+        @include computer{
+            display: none;
+        }
+    }
+    &__li{
+        padding: 10px 0;
+        font-weight: bold;
+    }
+    &::after{
+        width: 90%;
+        height: 1px;
+        background-color: rgb(176, 176, 176);
+        position: absolute;
+        content: "";
+        top: 752%;
+        left: 5%;
+    }
+}
+
+.final{
+        width: calc(100% - 20px);
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        padding: 10px;
+
+    &__nav{
+        width: calc(100% - 20px);
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        padding: 10px;
+    }
+    &__ul{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        
+    }
+    &__li{
+        width: 100%;
+        font-weight: bold;
+        padding: 15px 0;
+        display: flex;
+    }
+    &__icons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+    &__descarga{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+    &__p{
+        color: blue;
+        font-weight: bold;
+        padding: 10px 0;
+        display: flex;
+    }
+    &__iconos{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+
+    }
+    &__icon{
+        width: 30px;
+    }
+    &__texto{
+        color: gray;
+        font-size: 13px;
+        padding: 10px 0;
+    }
+    &__imgdescargar{
+        width: 20px;
+        padding-right: 5px;
+    }
+    &__region{
+        width: 20px;
+        padding-right: 5px;
+    }
+
+
+
+}
